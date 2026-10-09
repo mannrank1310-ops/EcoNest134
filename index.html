@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoNest</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; background-color: #F8F6EF; color: #242824; }
+        .fade-in { animation: fadeIn 0.5s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #F8F6EF; }
+        ::-webkit-scrollbar-thumb { background: #A7B99E; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #244C3A; }
+    </style>
+</head>
+<body>
+    <div id="app" class="min-h-screen flex flex-col"></div>
+
+    <script>
+        // --- DATA & CONSTANTS ---
+        const CATEGORIES = [
+            "Bamboo Bottles", "Reusable Bags", "Plantable Stationery", 
+            "Eco-Friendly Notebooks", "Reusable Lunchboxes"
+        ];
+
+        const PRODUCTS
